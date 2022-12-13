@@ -1,3 +1,7 @@
+<body>
+
+<form action="#" name="form1">
+
 <table>
 <tr>
 <th>商品名</th>
@@ -49,3 +53,7 @@
 <td><input type="text" name="field_total" size="8" value="0"> 円</td>
 </tr>
 </table>
+
+</form>
+
+</body>
