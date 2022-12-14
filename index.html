@@ -184,7 +184,7 @@
                     <body>
                             <h6>2022/12/08 テストテストテスト</h6><br>
                             <h6>2022/12/09 ネタ切れネタ切れ</h6><br>
-                            <h6>2022/12/10 疲れた疲れた</h6><br>
+                            <h6>2022/12/10 OKOKOK</h6><br>
                             <h6>2022/12/11 できたできた</h6><br>
                             <h6>2022/12/12 練習練習</h6><br>
                  <div class="wrap">
@@ -193,11 +193,11 @@
                         <!-- ↓↓最初隠したいコンテンツ↓↓ -->
                         <div class="content">
                         <p>
-                            <h6>2022/12/08 静的静的</h6><br>
+                            <h6>2022/12/08 静的ホスティング</h6><br>
                             <h6>2022/12/07 ワードプレスの勉強</h6><br>
                             <h6>2022/12/06 ポートフォリオ</h6><br>
-                            <h6>2022/12/08 おうち帰りた</h6><br>
-                            <h6>2022/12/07 しんどいしんどい</h6><br>
+                            <h6>2022/12/08 研究研究</h6><br>
+                            <h6>2022/12/07 遠藤優介</h6><br>
                             <h6>2022/12/06 hogehoge</h6><br>
                             <h6>2022/12/06 <a href="assets/CV.pdf"><u>hoge</u></a></h6>
                         </p>
@@ -302,7 +302,8 @@
 	 const L_SHORT = (Number(L1short.value) + Number(L2short.value))/2;
 	 const L_M     = (Number(L1open.value) + Number(L2open.value) - Number(L_SHORT.value))/2;
 	 const L_OPEN  = Math.sqrt(Number(L1open.value) * Number(L2open.value));
-	 document.form1.result.value  = Number(L_M.value)/Number(L_OPEN.value);
+	 document.form1.result.value  = (Number(L1short.value) + Number(L2short.value))/2;
+		 <!--Number(L_M.value)/Number(L_OPEN.value);-->
 	}
 
 </script> 
