@@ -300,15 +300,11 @@
  	 const L2short = document.querySelector("input[name=L2short]");
 	 const result  = document.querySelector("input[name=result]");
 	 const L_SHORT = (Number(L1short.value) + Number(L2short.value))/2;
-	 const L_OPEN  = (Number(L1open.value) + Number(L2open.value) -  Number(L_SHORT.value))/2;
-	 const L_M     = ;
-	 
-	 L_OPEN.value  = 
-	 result.value  = Number(L1open.value) + Number(L1short.value) + Number(L2open.value) + Number(L2short.value);
+	 const L_M     = (Number(L1open.value) + Number(L2open.value) - Number(L_SHORT.value))/2;
+	 const L_OPEN  = Math.sqrt(Number(L1open.value) * Number(L2open.value));
+	 result.value  = Number(L_M.value)/Number(L_OPEN.value);
 
 	}
-	
-
 
 </script> 
 
@@ -327,30 +323,26 @@
 <td>1次側開放時の2次側インダクタンス</td>
 <td align="right"><i>L</i><sub>1open</sub>：</td>
 <td><input type="number" name="L1open" value="  onChange="Calc()"> [uH]</td>
-
 </tr>
+	
 <tr>
 <td>1次側短絡時の2次側インダクタンス</td>
 <td align="right"><i>L</i><sub>1short</sub>：</td>
 <td><input type="number" name="L1short" value=" step="0.01" onChange="Calc()"> [uH]</td>
-
-
 </tr>
+	
 <tr>
 <td>2次側開放時の1次側インダクタンス</td>
 <td align="right"><i>L</i><sub>2open</sub>：</td>
 <td><input type="number" name="L2open" value=" step="0.01" onChange="Calc()"> [uH]</td>
-
-	
 </tr>
+	
 <tr>
 <td>2次側短絡時の1次側インダクタンス</td>
 <td align="right"><i>L</i><sub>2short</sub>：</td>
 <td><input type="number" name="L2short" value=" step="0.01" onChange="Calc()"> [uH]</td>
-
 </tr>
 
-	
 <td align="right" colspan="2"><strong>結合係数：</strong></td>
 <td><input type="number" name="result"> % </td>
 
