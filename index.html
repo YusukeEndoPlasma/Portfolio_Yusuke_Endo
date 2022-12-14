@@ -299,7 +299,12 @@
     	 const L2open  = document.querySelector("input[name=L2open]");
  	 const L2short = document.querySelector("input[name=L2short]");
 	 const result  = document.querySelector("input[name=result]");
-     	 result.value = Number(L1open.value) + Number(L1short.value) + Number(L2open.value) + Number(L2short.value);
+	 const L_SHORT = 0;
+	 const L_OPEN  = 0;
+	 const L_M     = 0;
+	 L_SHORT.value = (Number(L1short.value) + Number(L2short.value))/2
+	 L_OPEN.value  = (Number(L1open.value) + Number(L2open.value) + )/2
+     	 result.value  = L1open + L1short + L2open + L2short
 	}
 	
 
