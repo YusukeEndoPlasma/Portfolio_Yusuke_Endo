@@ -302,14 +302,14 @@ function Calc(){
 	// L1short
 	var L1short = document.getElementById('L1short');	
 	// L2open
-	var L1open = document.getElementById('L2open');	
+	var L2open = document.getElementById('L2open');	
 	// L2short
-	var L1open = document.getElementById('L2short');	
+	var L2short = document.getElementById('L2short');	
 	// 合計を計算
-	var total = L1open + L1short + L1open + L1open;
+	var total = L1open + L1short + L2open + L2short;
 
 	// 設定終了
-	document.form1.Answer.value = total; // 合計を表示
+	document.form1.answer.value = total; // 合計を表示
 
 }
 
@@ -354,7 +354,7 @@ function Calc(){
 </tr>
 
 	
-<td align="right" colspan="2"><strong>結合係数</strong></td>
+<td align="right" colspan="2"><strong>結合係数：</strong></td>
 <td><input type="text" name="answer"> </td>
 
 
