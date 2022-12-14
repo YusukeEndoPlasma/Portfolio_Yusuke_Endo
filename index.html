@@ -293,33 +293,15 @@
                                     
 <script type="text/javascript">
 
-function Calc(){
-
-	// 設定開始
-
-	const calc = ()=>{
-   	 const L1open  = document.querySelector("input[id=L1open]");
-    	 const L1short = document.querySelector("input[id=L1short]");
-    	 const L2open  = document.querySelector("input[id=L2open]");
- 	 const L2short = document.querySelector("input[id=L2short]");
+	function Calc(){
+   	 const L1open  = document.querySelector("input[name=L1open]");
+    	 const L1short = document.querySelector("input[name=L1short]");
+    	 const L2open  = document.querySelector("input[name=L2open]");
+ 	 const L2short = document.querySelector("input[name=L2short]");
      	 answer.value = Number(L1open.value) + Number(L1short.value) + Number(L2open.value) + Number(L2short.value);
 	}
 	
-	// L1open
-	var L1open = document.form1.L1open.selectedIndex;
-	// L1short
-	var L1short = document.form1.L1short.selectedIndex;	
-	// L2open
-	var L2open = document.form1.L2open.selectedIndex;	
-	// L2short
-	var L2short = document.form1.L2short.selectedIndex;	
-	// 合計を計算
-	var total = L1open + L1short + L2open + L2short;
 
-	// 設定終了
-	document.form1.answer.value = total; // 合計を表示
-
-}
 
 </script> 
 
