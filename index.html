@@ -298,29 +298,29 @@
 <script type="text/javascript">
 <!--
 
-function keisan(){
+function Calc(){
 
 	// 設定開始
 
-	// 商品1
-	var price1 = document.form1.goods1.selectedIndex * 500; // 単価を設定
-	document.form1.field1.value = price1; // 小計を表示
-
-	// 商品2
-	var price2 = document.form1.goods2.selectedIndex * 1000; // 単価を設定
-	document.form1.field2.value = price2; // 小計を表示
-
-	// 商品3
-	var price3 = document.form1.goods3.selectedIndex * 3000; // 単価を設定
-	document.form1.field3.value = price3; // 小計を表示
-
+	// L1open
+	var L1open = document.getElementById('L1open'); // 単価を設定
+	
+	// L1short
+	var L1short = document.getElementById('L1short'); // 単価を設定
+	
+	// L2open
+	var L1open = document.getElementById('L2open'); // 単価を設定
+	
+	// L2short
+	var L1open = document.getElementById('L2short'); // 単価を設定
+	
 	// 合計を計算
-	var total = price1 + price2 + price3;
+	var total = L1open + L1short + L1open + L1open;
 
 	// 設定終了
 
 
-	document.form1.field_total.value = total; // 合計を表示
+	document.form1.Answer.value = total; // 合計を表示
 
 }
 
@@ -370,13 +370,7 @@ function keisan(){
 <td align="right" colspan="2"><strong>結合係数</strong></td>
 <td><input type="text" name="answer" size="8" value="0"> </td>
 
-	
-function Calc() {
-    const number2 = document.getElementById("number3");
-    const number2 = document.getElementById("L2short");
-    document.getElementById("span2").textContent = number2.value;
 
-}
 	
 </table>
 
