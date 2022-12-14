@@ -299,11 +299,14 @@
     	 const L2open  = document.querySelector("input[name=L2open]");
  	 const L2short = document.querySelector("input[name=L2short]");
 	 const result  = document.querySelector("input[name=result]");
-	 const L_SHORT = (Number(L1short.value) + Number(L2short.value))/2;
-	 const L_M     = (Number(L1open.value) + Number(L2open.value) - Number(L_SHORT.value))/2;
-	 const L_OPEN  = Math.sqrt(Number(L1open.value) * Number(L2open.value));
-	 const Answer  = (Number(L1short.value) + Number(L2short.value))/2;
-	 document.form1.result.value  = Number(Answer.value);
+	 <!--const L_SHORT = (Number(L1short.value) + Number(L2short.value))/2;-->
+	 <!--const L_M     = (Number(L1open.value) + Number(L2open.value) - Number(L_SHORT.value))/2;-->
+	 <!--const L_OPEN  = Math.sqrt(Number(L1open.value) * Number(L2open.value));-->
+	 <!--const k  = (Number(L1short.value) + Number(L2short.value))/2;-->
+	 <!--document.form1.result.value  = Number(k.value);-->
+	 
+	 const k  = ( (Number(L1open.value) + Number(L2open.value) - (Number(L1short.value) + Number(L2short.value))/2)/2 ) / (Math.sqrt(Number(L1open.value) * Number(L2open.value)));
+	 document.form1.result.value  = Number(k.value);
 		 <!--Number(L_M.value)/Number(L_OPEN.value);-->
 	}
 
