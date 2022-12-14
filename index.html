@@ -366,9 +366,17 @@ function keisan(){
 
 </tr>
 
+	
 <td align="right" colspan="2"><strong>結合係数</strong></td>
-<td><input type="text" name="field_total" size="8" value="0"> %</td>
+<input type="button" value="GO" onclick="Calc()" />
+	
+function Calc() {
+    const number2 = document.getElementById("number3");
+    const number2 = document.getElementById("L2short");
+    document.getElementById("span2").textContent = number2.value;
 
+}
+	
 </table>
 
 </form>
