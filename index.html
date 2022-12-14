@@ -298,13 +298,13 @@ function Calc(){
 	// 設定開始
 
 	// L1open
-	var L1open = document.getElementById('L1open');
+	var L1open = document.form1.L1open.selectedIndex;
 	// L1short
-	var L1short = document.getElementById('L1short');	
+	var L1short = document.form1.L1short.selectedIndex;	
 	// L2open
-	var L2open = document.getElementById('L2open');	
+	var L2open = document.form1.L2open.selectedIndex;	
 	// L2short
-	var L2short = document.getElementById('L2short');	
+	var L2short = document.form1.L2short.selectedIndex;	
 	// 合計を計算
 	var total = L1open + L1short + L2open + L2short;
 
@@ -329,27 +329,27 @@ function Calc(){
 <tr>
 <td>1次側開放時の2次側インダクタンス</td>
 <td align="right"><i>L</i><sub>1open</sub>：</td>
-<td><input type="txt" id="L1open" onChange="Calc()"> [uH]</td>
+<td><input type="txt" name="L1open" onChange="Calc()"> [uH]</td>
 
 </tr>
 <tr>
 <td>1次側短絡時の2次側インダクタンス</td>
 <td align="right"><i>L</i><sub>1short</sub>：</td>
-<td><input type="txt" id="L1short" onChange="Calc()"> [uH]</td>
+<td><input type="txt" name="L1short" onChange="Calc()"> [uH]</td>
 
 
 </tr>
 <tr>
 <td>2次側開放時の1次側インダクタンス</td>
 <td align="right"><i>L</i><sub>2open</sub>：</td>
-<td><input type="txt" id="L2open" onChange="Calc()"> [uH]</td>
+<td><input type="txt" name="L2open" onChange="Calc()"> [uH]</td>
 
 	
 </tr>
 <tr>
 <td>2次側短絡時の1次側インダクタンス</td>
 <td align="right"><i>L</i><sub>2short</sub>：</td>
-<td><input type="txt" id="L2short" onChange="Calc()"> [uH]</td>
+<td><input type="txt" name="L2short" onChange="Calc()"> [uH]</td>
 
 </tr>
 
