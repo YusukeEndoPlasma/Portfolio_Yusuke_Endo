@@ -302,7 +302,8 @@
 	 const L_SHORT = (Number(L1short.value) + Number(L2short.value))/2;
 	 const L_M     = (Number(L1open.value) + Number(L2open.value) - Number(L_SHORT.value))/2;
 	 const L_OPEN  = Math.sqrt(Number(L1open.value) * Number(L2open.value));
-	 document.form1.result.value  = Number(L_M.value)/Number(L_OPEN.value);
+	 const Answer  = Number(L_M.value)/Number(L_OPEN.value);
+	 document.form1.result.value  = Number(Answer.value);
 		 <!--Number(L_M.value)/Number(L_OPEN.value);-->
 	}
 
