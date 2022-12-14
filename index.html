@@ -343,12 +343,8 @@ function keisan(){
 <td>1次側開放時の2次側インダクタンス</td>
 <td align="right"><i>L</i><sub>1open</sub></td>
 <td><select name="goods1" onChange="keisan()">
-<option>0</option>
-<option>1</option>
-<option>2</option>
-<option>3</option>
-<option>4</option>
-<option>5</option>
+const input1 = document.querySelector("input[name=input1]");
+	
 </select></td>
 <td><input type="text" name="field1" size="8" value="0"> 円</td>
 </tr>
@@ -356,12 +352,8 @@ function keisan(){
 <td>1次側短絡時の2次側インダクタンス</td>
 <td align="right"><i>L</i><sub>1short</sub></td>
 <td><select name="goods2" onChange="keisan()">
-<option>0</option>
-<option>1</option>
-<option>2</option>
-<option>3</option>
-<option>4</option>
-<option>5</option>
+const input2 = document.querySelector("input[name=input2]");
+	
 </select></td>
 <td><input type="text" name="field2" size="8" value="0"> 円</td>
 </tr>
@@ -369,12 +361,8 @@ function keisan(){
 <td>2次側開放時の1次側インダクタンス</td>
 <td align="right"><i>L</i><sub>2open</sub></td>
 <td><select name="goods3" onChange="keisan()">
-<option>0</option>
-<option>1</option>
-<option>2</option>
-<option>3</option>
-<option>4</option>
-<option>5</option>
+const input2 = document.querySelector("input[name=input2]");
+	
 </select></td>
 <td><input type="text" name="field3" size="8" value="0"> 円</td>
 </tr>
@@ -382,18 +370,14 @@ function keisan(){
 <td>2次側短絡時の1次側インダクタンス</td>
 <td align="right"><i>L</i><sub>2short</sub></td>
 <td><select name="goods3" onChange="keisan()">
-<option>0</option>
-<option>1</option>
-<option>2</option>
-<option>3</option>
-<option>4</option>
-<option>5</option>
+const input2 = document.querySelector("input[name=input2]");
+	
 </select></td>
 <td><input type="text" name="field3" size="8" value="0"> 円</td>
 </tr>
 <tr>
-<td align="right" colspan="3"><strong>合計</strong></td>
-<td><input type="text" name="field_total" size="8" value="0"> 円</td>
+<td align="right" colspan="3"><strong>結合係数<i>k</i></strong></td>
+<td><input type="text" name="field_total" size="8" value="0"> %</td>
 </tr>
 </table>
 
