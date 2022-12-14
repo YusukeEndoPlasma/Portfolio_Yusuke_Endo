@@ -49,7 +49,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">大学院生 - 起業家 - 教育者</p>
+                <p class="masthead-subheading font-weight-light mb-0">大学院生 - 高専生 - 研究</p>
             </div>
         </header>
         
@@ -292,15 +292,51 @@
                                         </script>
                                     </p>
                                     
-                                    <body>
+<head>
+<title>TAG index Webサイト</title>
+
+<script type="text/javascript">
+<!--
+
+function keisan(){
+
+	// 設定開始
+
+	// 商品1
+	var price1 = document.form1.goods1.selectedIndex * 500; // 単価を設定
+	document.form1.field1.value = price1; // 小計を表示
+
+	// 商品2
+	var price2 = document.form1.goods2.selectedIndex * 1000; // 単価を設定
+	document.form1.field2.value = price2; // 小計を表示
+
+	// 商品3
+	var price3 = document.form1.goods3.selectedIndex * 3000; // 単価を設定
+	document.form1.field3.value = price3; // 小計を表示
+
+	// 合計を計算
+	var total = price1 + price2 + price3;
+
+	// 設定終了
+
+
+	document.form1.field_total.value = total; // 合計を表示
+
+}
+
+// --> 
+</script> 
+
+</head>
+<body>
 
 <form action="#" name="form1">
 
 <table>
 <tr>
-<th>商品名</th>
-<th>単価</th>
-<th>数量</th>
+<th>パラメータ</th>
+<th></th>
+<th>測定値</th>
 <th>金額</th>
 </tr>
 <tr>
