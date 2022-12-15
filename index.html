@@ -295,8 +295,8 @@
 
 	function Calc(){
    	 let L1open  = document.querySelector("input[name=L1open]");
-    	 let L1short = document.querySelector("input[name=L1short]");
-    	 let L2open  = document.querySelector("input[name=L2open]");
+      	 let L1short = document.querySelector("input[name=L1short]");
+     	 let L2open  = document.querySelector("input[name=L2open]");
  	 let L2short = document.querySelector("input[name=L2short]");
 	 let result  = document.querySelector("input[name=result]");
 	 <!--const L_SHORT = (Number(L1short.value) + Number(L2short.value))/2;-->
@@ -304,11 +304,11 @@
 	 <!--const L_OPEN  = Math.sqrt(Number(L1open.value) * Number(L2open.value));-->
 	 <!--const k  = (Number(L1short.value) + Number(L2short.value))/2;-->
 	 <!--document.form1.result.value  = Number(k.value);-->
-	 let L_SHORT = (Number(L1short.value) + Number(L2short.value))/2;
-	 let L_M     = (Number(L1open.value) + Number(L2open.value) - Number(L_SHORT.value))/2;
-	 let L_OPEN  = Math.sqrt(Number(L1open.value) * Number(L2open.value));
-	 let k  = Number(L_M.value)/Number(L_OPEN.value);
-	 document.form1.result.value  = Number(k.value);-->
+	  let L_SHORT = (Number(L1short.value) + Number(L2short.value))/2;
+	  let L_M     = (Number(L1open.value) + Number(L2open.value) - L_SHORT)/2;
+	  let L_OPEN  = Math.sqrt(Number(L1open.value) * Number(L2open.value));
+	  let k       = L_M / L_OPEN;
+	 document.form1.result.value  = k;
 		 <!--Number(L_M.value)/Number(L_OPEN.value);-->
 	}
 
