@@ -27,7 +27,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#Profile">Profile</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#Purpose">Profile</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#Research">Research</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#News">News</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
@@ -41,7 +41,7 @@
                 <!-- Masthead Avatar Image-->
                 <!-- <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />-->
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Yusuke Endo</h1>
+                <h1 class="masthead-heading text-uppercase mb-0">高専生の懐を暖めるサイト</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -49,29 +49,29 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">大学院生 - 高専生 - 研究</p>
+                <p class="masthead-subheading font-weight-light mb-0">奨学金 - 就活 - 進路</p>
             </div>
         </header>
         
         
-        <!-- Profile Section-->
-        <section class="page-section" id="Profile">
+        <!-- Purpose Section-->
+        <section class="page-section" id="Purpose">
             <div class="container">
-                <!-- Profile Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Profile</h2>
+                <!-- Purpose Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">サイトの目的</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Profile Section Content-->
+                <!-- Purpose Section Content-->
                 <div class="row">
                     <div class="col-lg-4 ms-auto"><p class="lead">
-                        遠藤　優介<br>
-                        奈良先端科学技術大学院大学<br>
-                        先端科学技術研究科　物質理工学専攻<br>
-                        量子物理工学研究室<br>
+                        <b>高専生の時間効率向上</b><br>
+                        高専生やその卒業生の活躍は，企業に高く評価されている．<br>
+                        そして，日本社会の高専生への期待はますます高まりつつある．<br>
+                        しかしながら<br>
                         </p></div>
                     <div class="col-lg-4 me-auto"><p class="lead">
                         <br>
@@ -79,7 +79,7 @@
                         <!--代表取締役<br>-->
                         </p></div>
                 </div>
-                <!-- Profile Section Button-->
+                <!-- Purpose Section Button-->
                 <div class="text-center mt-4">
                     <!--<a class="btn btn-xl btn-outline-light" href="assets/CV.pdf">-->
                     <a class="btn btn-xl" href="assets/CV.pdf">    
@@ -291,72 +291,6 @@
                                         </script>
                                     </p>
                                     
-<script type="text/javascript">
-
-	function Calc(){
-   	 let L1open  = document.querySelector("input[name=L1open]");
-      	 let L1short = document.querySelector("input[name=L1short]");
-     	 let L2open  = document.querySelector("input[name=L2open]");
- 	 let L2short = document.querySelector("input[name=L2short]");
-	 let result  = document.querySelector("input[name=result]");
-	 <!--const L_SHORT = (Number(L1short.value) + Number(L2short.value))/2;-->
-	 <!--const L_M     = (Number(L1open.value) + Number(L2open.value) - Number(L_SHORT.value))/2;-->
-	 <!--const L_OPEN  = Math.sqrt(Number(L1open.value) * Number(L2open.value));-->
-	 <!--const k  = (Number(L1short.value) + Number(L2short.value))/2;-->
-	 <!--document.form1.result.value  = Number(k.value);-->
-	  let L_SHORT = (Number(L1short.value) + Number(L2short.value))/2;
-	  let L_M     = (Number(L1open.value) + Number(L2open.value) - L_SHORT)/2;
-	  let L_OPEN  = Math.sqrt(Number(L1open.value) * Number(L2open.value));
-	  let k       = L_M / L_OPEN;
-	 document.form1.result.value  = k;
-		 <!--Number(L_M.value)/Number(L_OPEN.value);-->
-	}
-
-</script> 
-
-<body>
-
-<form action="#" name="form1">
-
-<table>
-<tr>
-<th>パラメータ</th>
-<th></th>
-<th>測定値</th>
-</tr>
-	
-<tr>
-<td>1次側開放時の2次側インダクタンス</td>
-<td align="right"><i>L</i><sub>1open</sub>：</td>
-<td><input type="number" name="L1open" value="  onChange="Calc()"> [uH]</td>
-</tr>
-	
-<tr>
-<td>1次側短絡時の2次側インダクタンス</td>
-<td align="right"><i>L</i><sub>1short</sub>：</td>
-<td><input type="number" name="L1short" value=" step="0.01" onChange="Calc()"> [uH]</td>
-</tr>
-	
-<tr>
-<td>2次側開放時の1次側インダクタンス</td>
-<td align="right"><i>L</i><sub>2open</sub>：</td>
-<td><input type="number" name="L2open" value=" step="0.01" onChange="Calc()"> [uH]</td>
-</tr>
-	
-<tr>
-<td>2次側短絡時の1次側インダクタンス</td>
-<td align="right"><i>L</i><sub>2short</sub>：</td>
-<td><input type="number" name="L2short" value=" step="0.01" onChange="Calc()"> [uH]</td>
-</tr>
-
-<td align="right" colspan="2"><strong>結合係数：</strong></td>
-<td><input type="number" name="result"> % </td>
-	
-</table>
-
-</form>
-
-</body>
                                     
                                     <script src="js/calc.js">
                                     </script>     
