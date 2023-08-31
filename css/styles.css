@@ -6526,7 +6526,7 @@ textarea.form-control-lg {
   position: fixed;
   top: 0;
   right: 0;
-  left: 0;
+  left: 100;
   z-index: 1030;
 }
 
